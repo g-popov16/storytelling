@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071520"/>
+      <stop offset="60%" stop-color="#0d2a1e"/>
+      <stop offset="100%" stop-color="#1d3428"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5ead0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#c9a86c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="900" height="520" fill="url(#skyG)"/>
+
+  <!-- Moon halo -->
+  <ellipse cx="680" cy="95" rx="70" ry="70" fill="url(#moonGlow)"/>
+  <!-- Moon -->
+  <circle cx="680" cy="95" r="26" fill="#f0e2c0" opacity="0.9" filter="url(#softGlow)"/>
+
+  <!-- Stars -->
+  <circle cx="80"  cy="40"  r="1.2" fill="#f5ead0" opacity="0.8"/>
+  <circle cx="150" cy="70"  r="0.9" fill="#f5ead0" opacity="0.6"/>
+  <circle cx="220" cy="30"  r="1.4" fill="#f5ead0" opacity="0.9"/>
+  <circle cx="310" cy="55"  r="0.8" fill="#f5ead0" opacity="0.7"/>
+  <circle cx="380" cy="25"  r="1.1" fill="#f5ead0" opacity="0.8"/>
+  <circle cx="450" cy="50"  r="0.7" fill="#f5ead0" opacity="0.5"/>
+  <circle cx="530" cy="35"  r="1.3" fill="#f5ead0" opacity="0.9"/>
+  <circle cx="600" cy="65"  r="0.8" fill="#f5ead0" opacity="0.6"/>
+  <circle cx="750" cy="45"  r="1.0" fill="#f5ead0" opacity="0.7"/>
+  <circle cx="820" cy="80"  r="0.9" fill="#f5ead0" opacity="0.8"/>
+  <circle cx="860" cy="35"  r="1.2" fill="#f5ead0" opacity="0.6"/>
+  <circle cx="120" cy="110" r="0.7" fill="#f5ead0" opacity="0.5"/>
+  <circle cx="480" cy="80"  r="1.0" fill="#f5ead0" opacity="0.7"/>
+  <circle cx="560" cy="110" r="0.8" fill="#f5ead0" opacity="0.5"/>
+  <circle cx="170" cy="140" r="0.6" fill="#f5ead0" opacity="0.4"/>
+  <circle cx="290" cy="100" r="1.1" fill="#f5ead0" opacity="0.7"/>
+
+  <!-- Far mountains -->
+  <path d="M0,380 L60,270 L120,310 L200,200 L280,265 L360,185 L440,250 L520,165 L600,215 L670,155 L740,200 L820,155 L900,190 L900,520 L0,520Z" fill="#122a20"/>
+
+  <!-- Mid mountains -->
+  <path d="M0,430 L80,340 L160,385 L260,305 L350,360 L440,290 L520,330 L610,270 L700,320 L780,275 L860,310 L900,295 L900,520 L0,520Z" fill="#1a3828"/>
+
+  <!-- Near mountain layer -->
+  <path d="M0,470 L120,400 L220,440 L330,385 L440,420 L550,368 L650,405 L760,370 L860,400 L900,385 L900,520 L0,520Z" fill="#22442e"/>
+
+  <!-- Valley floor -->
+  <rect x="0" y="490" width="900" height="30" fill="#1a3425"/>
+
+  <!-- Monastery compound wall -->
+  <rect x="350" y="445" width="200" height="12" fill="#152a1e"/>
+
+  <!-- Main monastery building -->
+  <rect x="385" y="400" width="130" height="55" fill="#0f221a"/>
+  <!-- Roof -->
+  <polygon points="375,400 525,400 450,368" fill="#0a1b14"/>
+
+  <!-- Bell tower left -->
+  <rect x="388" y="378" width="24" height="28" fill="#0f221a"/>
+  <polygon points="384,378 416,378 400,362" fill="#0a1b14"/>
+  <!-- Bell tower arch -->
+  <path d="M393,375 Q400,368 407,375" fill="none" stroke="#c9a86c" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Central dome -->
+  <rect x="440" y="365" width="20" height="20" fill="#0f221a"/>
+  <path d="M436,365 Q450,350 464,365" fill="#0a1b14"/>
+  <!-- Cross -->
+  <line x1="450" y1="342" x2="450" y2="356" stroke="#c9a86c" stroke-width="1.8" opacity="0.8"/>
+  <line x1="444" y1="348" x2="456" y2="348" stroke="#c9a86c" stroke-width="1.8" opacity="0.8"/>
+
+  <!-- Windows with warm glow -->
+  <rect x="400" y="415" width="16" height="22" rx="8" fill="#c9a86c" opacity="0.35"/>
+  <rect x="425" y="415" width="16" height="22" rx="8" fill="#c9a86c" opacity="0.28"/>
+  <rect x="469" y="415" width="16" height="22" rx="8" fill="#c9a86c" opacity="0.28"/>
+  <rect x="494" y="415" width="16" height="22" rx="8" fill="#c9a86c" opacity="0.35"/>
+  <!-- Door -->
+  <rect x="442" y="427" width="18" height="28" rx="9" fill="#071510"/>
+
+  <!-- Outbuilding right -->
+  <rect x="520" y="430" width="40" height="25" fill="#0f221a"/>
+  <polygon points="516,430 564,430 540,418" fill="#0a1b14"/>
+
+  <!-- Outbuilding left -->
+  <rect x="340" y="432" width="38" height="23" fill="#0f221a"/>
+  <polygon points="336,432 382,432 359,420" fill="#0a1b14"/>
+
+  <!-- Trees flanking -->
+  <path d="M300,490 L314,455 L328,490Z" fill="#0a1e14"/>
+  <path d="M305,465 L314,445 L323,465Z" fill="#0d2218"/>
+  <path d="M572,490 L586,455 L600,490Z" fill="#0a1e14"/>
+  <path d="M577,465 L586,445 L595,465Z" fill="#0d2218"/>
+  <path d="M258,500 L268,475 L278,500Z" fill="#0a1e14"/>
+  <path d="M618,500 L628,475 L638,500Z" fill="#0a1e14"/>
+
+  <!-- Path/road to monastery -->
+  <path d="M430,520 Q450,505 450,490 Q450,478 450,465" fill="none" stroke="#1d3828" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Ground mist -->
+  <rect x="0" y="505" width="900" height="15" fill="#1a3828" opacity="0.7"/>
+</svg>
