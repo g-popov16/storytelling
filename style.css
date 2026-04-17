@@ -915,6 +915,9 @@ body {
   max-width: 720px;
   margin: 0 auto;
 }
+.synthesis-card .analysis-line {
+  color: var(--ink-light);
+}
 .synthesis-quote {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(1.35rem, 2.6vw, 2.1rem);
